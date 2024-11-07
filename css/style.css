@@ -91,7 +91,7 @@
      transition: all .3s ease-in-out;
 }
  img {
-     max-width: 75%;
+     max-width: 100%;
      height: auto;
 }
  :focus {
@@ -789,8 +789,9 @@
 }
  .footer .img-box {
      padding-right: 25px;
+     width: 400px;
 }
- .footer_logo {
+ .footer_logo {     
      text-align: center;
      padding-bottom: 50px;
 }
