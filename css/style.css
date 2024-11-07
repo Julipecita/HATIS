@@ -449,27 +449,27 @@
      top: 50%;
      transform: translateY(-50%);
      bottom: auto;
-     text-align: left;
+     text-align: right;
 }
  .text_box span{
-    font-weight: 100;
-     color: #000006;
+    font-weight: 200;
+     color: #141455;
      font-size:100px;
      line-height:100px;
 }
  .text_box h1 {
-    padding: 20px 0;
+    padding: 10px 0;
      font-weight: 500;
-     color: #fff;
+     color: #d35858;
      font-size: 73px;
-     line-height: 86px;
+     line-height: 80px;
 }
  .text_box a {
-     color: #fff;
-     font-size: 17px;
+     color: #1a0b0b;
+     font-size: 20px;
      line-height: 29px;
      background: transparent;
-     border: #fff solid 1px;
+     border: #200f0f solid 1px;
      padding: 12px 45px;
      display: inline-block;
 }
@@ -482,7 +482,7 @@
  .about {
      padding: 90px 0px;
      background-repeat: no-repeat;
-     background: url(../images/background.jpg);
+     background: url(../images/fondo-hojas-tropicales-dibujadas-mano-grabado_23-2148968849.avif);
      background-size: 100% 100%;
 }
  .about .about_box {
@@ -595,7 +595,7 @@
  .pricing {
      padding-top: 90px;
      background: url(../images/fondo-diseno-floral-lineal_23-2149130877.avif);
-     background-size: 100% 40%;
+     background-size: 100% 60%;
      background-repeat: no-repeat;
 }
  .pricing .ourheading {
@@ -691,7 +691,7 @@
      font-weight: 500;
 }
 /** end pricing **/
-/** our barbers **/
+/** our colaboradores **/
  .resip_section {
      background: #fff;
      padding: 90px 0px;
