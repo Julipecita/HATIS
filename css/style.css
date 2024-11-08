@@ -130,12 +130,10 @@
      margin: 0;
      padding: 0;
      cursor: pointer;
-}
- .full {
-     float: left;
-     width: 100%;
-}
- .layout_padding {
+    
+    }
+
+.layout_padding {
      padding-top: 90px;
      padding-bottom: 90px;
 }
@@ -259,7 +257,17 @@
      width: 280px;
 }
 /*--------------------------------------------------------------------- header ---------------------------------------------------------------------*/
- header {
+.contact-icon {
+    margin-right: 15px;
+    margin-left: 15px; /* Optional for phone icon */
+  }
+
+.dinone a {
+    text-decoration: none; /* Optional to remove underline from links */
+    color: inherit; /* Optional to inherit text color */
+} 
+
+header {
      min-height: 90px;
      background: #fff;
      padding: 15px 0;
@@ -286,7 +294,7 @@
      display: inline;
      font-size: 16px;
      margin-left: 45px;
-     color: #eaeaea;
+     color: #250808;
      font-weight: 400;
      float: left;
 }
@@ -294,25 +302,15 @@
      font-weight: 300;
 }
  #sidebarCollapse a {
-     font-size: 20px;
+     font-size: 200px;
      font-weight: bold;
-     line-height: 22px;
-     color: #37baeb;
+     line-height: 100px;
+     color: #0a1a20;
 }
  .button_user li a {
     color: #fff;
 }
- .button_user a {
-     float: left;
-     min-width: 75px;
-     height: 35px;
-     text-align: center;
-     line-height: 35px;
-     position: relative;
-     top: -3px;
-     padding: 0 15px;
-     margin: 0 2px;
-}
+
  .button_user a {
      float: left;
      min-width: 75px;
@@ -320,7 +318,7 @@
      text-align: center;
      line-height: 48px;
      position: relative;
-     top: -7px;
+     top: -10px;
      padding: 0 47px;
      color: #fff;
      margin: 0 2px;
@@ -394,7 +392,7 @@
      opacity: 1;
      width: 55px;
      height:55px;
-     background: #fff;
+     background: #aa2d2d;
      top: 35%;
 }
  .carousel-control-next:focus, .carousel-control-next:hover {
@@ -407,7 +405,7 @@
      opacity: 1;
      width: 55px;
      height:55px;
-     background: #fff;
+     background: #aa2d2d;
      top: 35%;
 }
  .owl-prev span {
@@ -445,22 +443,22 @@
      position: relative;
 }
  .text_box {
-     position: absolute;
-     top: 50%;
-     transform: translateY(-50%);
+     position: left;
+     top: 100%;
+     transform: translateY(0%);
      bottom: auto;
      text-align: right;
 }
  .text_box span{
-    font-weight: 200;
-     color: #141455;
+    font-weight: 300;
+     color: #349db8;
      font-size:100px;
      line-height:100px;
 }
  .text_box h1 {
     padding: 10px 0;
      font-weight: 500;
-     color: #d35858;
+     color: #6e1414;
      font-size: 73px;
      line-height: 80px;
 }
@@ -469,7 +467,7 @@
      font-size: 20px;
      line-height: 29px;
      background: transparent;
-     border: #200f0f solid 1px;
+     border: #2d7d8b solid 1px;
      padding: 12px 45px;
      display: inline-block;
 }
@@ -484,6 +482,7 @@
      background-repeat: no-repeat;
      background: url(../images/fondo-hojas-tropicales-dibujadas-mano-grabado_23-2148968849.avif);
      background-size: 100% 100%;
+     backg
 }
  .about .about_box {
      padding: 1px 1px;
@@ -503,7 +502,7 @@
      padding: 0;
 }
  .about .about_box p {
-     color: #000;
+     color: #070707;
      font-size: 17px;
      line-height: 29px;
      padding: 30px 0px;
@@ -573,7 +572,8 @@
  .service_box figure {
     margin: 0;
      margin-top: 20px;
-}
+     
+    }
  .service_box figure img {
     margin-top: -30px;
 }
@@ -587,7 +587,7 @@
 }
  .service_box p {
     color: #050000;
-     font-size: 15px;
+     font-size: 25px;
      line-height: 28px;
 }
 /** end service **/
@@ -698,13 +698,13 @@
 }
  .product_blog_cont h3 {
      color: #23242a;
-     font-size: 50px;
+     font-size: 30px;
      line-height: 50px;
      font-weight: 500;
      text-align: center;
 }
  .product_blog_cont h4 {
-     color: #3dbff0;
+     color: #4b86d4;
      font-size: 20px;
      line-height: 20px;
      font-weight: 500;
@@ -727,7 +727,7 @@
      padding-bottom: 0px;
 }
  .white {
-     color: #00aeef;
+     color: #2f3fce;
      font-weight: 500;
 }
  #white_coloe {
@@ -742,7 +742,7 @@
      border-radius: inherit;
      margin-bottom: 25px;
      padding: 12px 20px;
-     background: #98bac7;
+     background: #3553b8;
      color: #fff;
      font-family: poppins;
 }
@@ -762,7 +762,7 @@
      padding: 15px 20px;
      width: 100%;
      padding-top: 29px;
-     background: #98bac7;
+     background: #3553b8;
 
 }
  .send {
@@ -770,7 +770,7 @@
      float: left;
      margin: 0 auto;
      display: block;
-     background: #399e4a;
+     background: #3553b8;
      color: #fff;
      max-width: 165px;
      padding: 13px 0px;
@@ -778,7 +778,7 @@
      font-size: 18px;
 }
  .send:hover {
-     background: #ed1c24;
+     background: #3b3d44;
      color: #fff;
 }
 /** end contact **/
@@ -1002,4 +1002,30 @@
      color: #fff;
      font-weight: 500;
 }
- 
+
+.search-icon {
+    margin-right: 15px;
+    width: 50%;
+}
+
+.button_user .button {
+    text-decoration: none; /* Optional: removes underline */
+    color: white; /* Change text color if needed */
+    background-color: #007bff; /* Optional: button background color */
+    padding: 0 20px; /* Optional: add padding for better button appearance */
+    border-radius: 5px; /* Optional: round corners */
+    transition: background-color 0.3s ease; /* Optional: smooth transition for hover effect */
+}
+
+.button_user .button:hover {
+    background-color: #0056b3; /* Change color on hover */
+}
+.full {
+    text-align: start; /* Optional: Centers the logo */
+}
+
+.logo img {
+    width: auto; /* Ensures image maintains its original proportions */
+    max-width: 50%; /* Optional: ensures responsiveness */
+    height: auto; /* Optional: maintains aspect ratio */
+}
