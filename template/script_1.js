@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <td>${persona.cedula}</td>
             <td>${persona.nombre}</td>
             <td>${persona.edad}</td>
-            <td>${persona.profesion}</td>
+            <td>${persona.planta}</td>
             <td class="actions">
                 <button class="button-edt" onclick="editPersona('${persona.cedula}')">Editar</button>
                 <button class="button-del" onclick="deletePersona('${persona.cedula}')">Eliminar</button>
@@ -49,9 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const cedula = form.cedula.value;
         const nombre = form.nombre.value;
         const edad = form.edad.value;
-        const profesion = form.profesion.value;
+        const profesion = form.planta.value;
 
-        const personaData = { cedula, nombre, edad, profesion }; // Datos de la persona en un objeto.
+        const personaData = { cedula, nombre, edad, planta }; // Datos de la persona en un objeto.
 
         if (isEditing) {
             // Si está en modo edición, actualiza la persona con la cédula actual.
@@ -88,8 +88,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 document.getElementById('cedula').value = row.cells[0].textContent;
                 document.getElementById('nombre').value = row.cells[1].textContent;
-                document.getElementById('edad').value = row.cells[2].textContent;
-                document.getElementById('profesion').value = row.cells[3].textContent;
+                document.getElementById('email').value = row.cells[2].textContent;
+                document.getElementById('planta').value = row.cells[3].textContent;
 
                 actualCedula = cedula;  // Establece el cedula actual
                 document.getElementById('submitBtn').style.display = 'inline';

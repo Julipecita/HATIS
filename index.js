@@ -152,7 +152,7 @@ app.post('/api/guardar1', (req, res) => {  // Eliminación de la barra adicional
         if (error) {
             res.status(500).json({ error });
         } else {
-            res.status(201).json({ cedula: result.insertId, nombre, celular, email, planta });
+            res.status(201).json({ cedula: result.insertId, cedula, nombre, celular, email, planta });
         }
     });
 });
