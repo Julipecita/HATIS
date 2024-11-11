@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>HATIS</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- owl css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="" /></div>
+    </div>
+
+    <div class="wrapper">
+        <!-- end loader -->
+
+        <div class="sidebar">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+
+                <div id="dismiss">
+                    <i class="fa fa-arrow-left"></i>
+                </div>
+
+                <ul class="list-unstyled components">
+
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Acerca de</a>
+                    </li>
+                    <li>
+                        <a href="service.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="pricing.html">Precios</a>
+                    </li>
+
+                    <li>
+                        <a href="parner.html">Colaboradores</a>
+
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contactanos</a>
+                    </li>
+
+                    <li class="active">                  
+                        <a href="compras.html">Compras</a>
+                    </li>
+
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+
+        <div id="content">
+            <!-- header -->
+            <header>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="full">
+                                <a class="logo" href="index.html">
+                                    <img src="images/logo hatis.png" alt="Hatis Plantas y Decoración Logo" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="full">
+                                <div class="right_header_info">
+                                    <ul>
+                                        <li class="dinone">
+                                            <img class="contact-icon" src="images/phone_icon.png" alt="Phone icon">
+                                            <a href="tel:+573115781499">+57 3115781499</a>
+                                        </li>
+                                        <li class="dinone">
+                                            <img class="contact-icon" src="images/mail_icon.png" alt="Email icon">
+                                            <a href="mailto:hatisplantasydecoracion@gmail.com">hatisplantasydecoracion@gmail.com</a>
+                                        </li>
+                                        
+                                        <li class="dinone">
+                                            <img class="search-icon" src="images/search_icon.png" alt="Search icon">
+                                        </li>
+                                        <li class="button_user">
+                                            <a class="button" href="#">Compra ahora</a>
+                                        </li>
+                                        <div>
+                                        <li>
+                                            <button type="button" id="sidebarCollapse" aria-label="Toggle Sidebar">
+                                              <br>  MENU
+                                            </button>
+                                        </li>
+                                    </div>
+                                    </ul>                 
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- end header -->
+            <div class="yellow_bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title">
+                                <h2>Comprar</h2>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contact -->
+            <div id="contact" class="contact">
+                <div class="container">
+                    <div class="row">
+                       
+                    </div>
+
+                    <main>
+                        <section id="form-section">
+                            <h2>Registro de Compras</h2>
+                            <form id="personaForm">
+                                <label for="cedula">Cédula:</label>
+                                <input type="text" id="cedula" name="cedula" required>
+                
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+
+                                <label for="celular">Celular:</label>
+                                <input type="text" id="celular" name="celular" required>
+                
+                                <label for="email">Email:</label>
+                                <input type="text" id="email" name="email" required>
+                
+                                <label for="planta">Planta:</label>
+                                <input type="text" id="planta" name="planta" required>
+                
+                                <button type="submit" class="submitbtn" id="submitBtn">Guardar</button>
+                                <!-- <button type="button" id="updateBtn">Actualizar</button> -->
+                            </form>
+                
+                        </section>
+                
+                        <section id="table-section">
+                            <h2>Listado de Compras</h2>
+                            <table id="personaTable">
+                                <thead>
+                                    <tr>
+                                        <th>Cédula</th>
+                                        <th>Nombre</th>
+                                        <th>Celular</th>
+                                        <th>Email</th>
+                                        <th>Planta</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </section>
+                    </main>
+                </div>
+            </div>
+            
+            <!-- end contact -->
+            <!-- footer -->
+            <fooetr>
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="footer_logo">
+                                    <a href="index.html"><img src="images/logo hatis.png" width="300px" alt="logo" /></a>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="address">
+                                    <h3>Contactanos</h3>
+                                        <p>
+                                            Direccion: Calle  # 92- 53 Barrio Quirigua
+                                             <br> cel: +57 3115781499
+                                             <br> cel: +57 3224298112
+                                             <br> Email: hatisplantasydecoracion@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <ul class="lik">
+
+                                    <li> <a href="https://www.facebook.com/HATIS2020"></a><img src="images/fb.png" width="100px" alt="#" /></li>
+                                    <li> <a href="https://api.whatsapp.com/message/FTB5TOBKNDA7G1?autoload=1&app_absent=0&fbclid=PAY2xjawGXxF5leHRuA2FlbQIxMAABpuNBTVPGXzCVR1RBcJtf845CaRJY5YnjsIJsIIUxCZAv422FjqVxnJzkzg_aem_8fn3Wpd6BsKpXgAt1vT1ZA"><img src="images/WP.webp" width="100px" alt="#" /></a></li>
+                                    <li> <a href="https://www.instagram.com/hatisplantas?igsh=MXBubm5kOHB1cHQ0Mg=="><img src="images/instagram.webp" width="100px" alt="#" /></a></li>
+
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <div class="container">
+                            <p>© 2024 All Rights Reserved. <a href="https://html.design/"> Free Html Templates</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </fooetr>
+            <!-- end footer -->
+
+        </div>
+
+        <div class="overlay"></div>
+        <!-- Javascript files-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="./script_1.js"></script>
+
+        <script src="js/jquery-3.0.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#dismiss, .overlay').on('click', function() {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').removeClass('active');
+                });
+
+                $('#sidebarCollapse').on('click', function() {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').addClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+        </script>
+
+        <style>
+            #owl-demo .item {
+                margin: 3px;
+            }
+            
+            #owl-demo .item img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        </style>
+
+        <script>
+            $(document).ready(function() {
+                var owl = $('.owl-carousel');
+                owl.owlCarousel({
+                    margin: 10,
+                    nav: true,
+                    loop: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 3
+                        }
+                    }
+                })
+            })
+        </script>
+
+</body>
+
+</html>

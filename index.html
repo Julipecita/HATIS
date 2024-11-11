@@ -69,6 +69,9 @@
                     <li>
                         <a href="contact.html">Contactanos</a>
                     </li>
+                    <li>                    
+                        <a href="compras.html">Compras</a>
+                    </li>
                 </ul>
 
             </nav>
@@ -102,7 +105,7 @@
                                             <img class="search-icon" src="images/search_icon.png" alt="Search icon">
                                         </li>
                                         <li class="button_user">
-                                            <a class="button" href="#">Compra ahora</a>
+                                            <a class="button" href="compras.html">Compra ahora</a>
                                         </li>
                                         <div>
                                         <li>
@@ -366,39 +369,68 @@
 
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-
-                                <form class="main_form">
-                                    <div class="row">
-
+    
+                                <form id="personaForm">
+                                    <section class="row">
+    
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                            <input class="form-control" placeholder="Nombre" type="text" name="Nombre">
+                                            <label for="cedula">Cédula:</label>
+                                            <input type="text" id="cedula" name="cedula" required>
+                                            
+                                        </div>
+    
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <label for="nombre">Nombre:</label>
+                                            <input type="text" id="nombre" name="nombre" required>
+                                            
+                                        </div>
+    
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <label for="celular">Celular:</label>
+                                            <input type="number" id="celular" name="celular" required>
+                                            
+                                        </div>
+    
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <label for="email">Email:</label>
+                                            <input type="text" id="email" name="email" required>
+                                            
                                         </div>
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                            <input class="form-control" placeholder="Celular" type="text" name="Celular">
+                                            <label for="fecha">Fecha</label>
+                                            <input type="text" id="fecha" name="fecha" required>
                                         </div>
+                                        
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                            <input class="form-control" placeholder="Email" type="text" name=" Email">
+                                            <button type="submit" class="submitbtn" id="submitBtn">Guardar</button>
                                         </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                            <input class="form-control" placeholder="Date" type="date" name=" Date">
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                            <textarea class="textarea" placeholder="Mensaje" type="text" name="Mensaje"></textarea>
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                            <button class="send">Enviar</button>
-                                        </div>
-                                    </div>
+                                    </section>
                                 </form>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                 <div class="img-box">
-                                    <figure><img src="images/Ubicacion.png" alt="img"  /></figure>
+                                    <figure><img src="images/Ubicacion.png" alt="img" /></figure>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div id="table-section">
+                        <h2>Listado de Personas</h2>
+                        <table id="personaTable">
+                            <thead>
+                                <tr>
+                                    <th>Cédula</th>
+                                    <th>Nombre</th>
+                                    <th>Celular</th>
+                                    <th>Email</th>
+                                    <th>Fecha</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                     </div>
                 <!-- end contact -->
                 <!-- footer -->
                 <fooetr>
@@ -423,9 +455,10 @@
                                 <div class="col-md-12">
                                     <ul class="lik">
 
-                                        <li> <img src="images/fb.png" width="100px" alt="#" />@hatisplantas</li>
-                                        <li> <a href="https://api.whatsapp.com/message/FTB5TOBKNDA7G1?autoload=1&app_absent=0&fbclid=PAY2xjawGXxF5leHRuA2FlbQIxMAABpuNBTVPGXzCVR1RBcJtf845CaRJY5YnjsIJsIIUxCZAv422FjqVxnJzkzg_aem_8fn3Wpd6BsKpXgAt1vT1ZA"><img src="images/WP.webp" width="100px" alt="#" /></a></li>
-                                        <li> <img src="images/instagram.webp" width="100px" alt="#" />@hatisplantas</li>
+                                        <li> <a href="https://www.facebook.com/HATIS2020"></a><img src="images/fb.png" width="100px" alt="#" /></li>
+                                    <li> <a href="https://api.whatsapp.com/message/FTB5TOBKNDA7G1?autoload=1&app_absent=0&fbclid=PAY2xjawGXxF5leHRuA2FlbQIxMAABpuNBTVPGXzCVR1RBcJtf845CaRJY5YnjsIJsIIUxCZAv422FjqVxnJzkzg_aem_8fn3Wpd6BsKpXgAt1vT1ZA"><img src="images/WP.webp" width="100px" alt="#" /></a></li>
+                                    <li> <a href="https://www.instagram.com/hatisplantas?igsh=MXBubm5kOHB1cHQ0Mg=="><img src="images/instagram.webp" width="100px" alt="#" /></a></li>
+
 
                                     </ul>
 

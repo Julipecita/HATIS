@@ -38,7 +38,7 @@
      font-size: 24px 
 }
  h2 {
-     font-size: 22px 
+     font-size: 50px 
 }
  h3 {
      font-size: 5px 
@@ -482,8 +482,8 @@ header {
      background-repeat: no-repeat;
      background: url(../images/fondo-hojas-tropicales-dibujadas-mano-grabado_23-2148968849.avif);
      background-size: 100% 100%;
-     backg
-}
+     
+    }
  .about .about_box {
      padding: 1px 1px;
 }
@@ -659,7 +659,7 @@ header {
      border: #00aeef solid 1px;
      padding: 12px 40px;
      display: inline-block;
-     float: right;
+     float: none;
      margin-right: 23px;
      margin-top: 40px 
 }
@@ -734,7 +734,7 @@ header {
     color: #fff;
 }
  #contact *::placeholder {
-     color: #fff;
+     color: #ffffff;
      opacity: 1;
 }
  .form-control {
@@ -1011,14 +1011,14 @@ header {
 .button_user .button {
     text-decoration: none; /* Optional: removes underline */
     color: white; /* Change text color if needed */
-    background-color: #007bff; /* Optional: button background color */
+    background-color: #4d97e6; /* Optional: button background color */
     padding: 0 20px; /* Optional: add padding for better button appearance */
     border-radius: 5px; /* Optional: round corners */
     transition: background-color 0.3s ease; /* Optional: smooth transition for hover effect */
 }
 
 .button_user .button:hover {
-    background-color: #0056b3; /* Change color on hover */
+    background-color: #448edd; /* Change color on hover */
 }
 .full {
     text-align: start; /* Optional: Centers the logo */
@@ -1029,3 +1029,125 @@ header {
     max-width: 50%; /* Optional: ensures responsiveness */
     height: auto; /* Optional: maintains aspect ratio */
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("./img/fondo.jpg");
+    /* Imagen de fondo*/
+    background-attachment: fixed;
+    /* Dejarla fija*/
+    color: rgb(51, 51, 51);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1,
+h2 {
+    color: rgb(14, 67, 136);
+}
+
+form,
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: rgb(64, 167, 199);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label,
+input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+}
+
+label {
+    font-size: 20px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(34, 104, 185);
+    color: rgb(10, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submitbtn {
+    width: 100%;
+}
+
+.button-edt {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(56, 197, 37);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-del {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(173, 70, 22);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: help;
+}
+
+button:hover {
+    background-color: rgb(98, 99, 92);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 20px;
+    border: 1px solid rgba(187, 132, 132, 0.784);
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+tr {
+    background-color: rgba(197, 111, 111, 0.725);
+    
+}
+
+.actions button {
+    margin: 0 5px;
+}
+
+#table-section {
+    
+padding: 70px;
+text-align: left;
+text-size-adjust: 500px;
+}
+
