@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Obtiene la lista de personas de la API.
     function fetchPersonas() {
-        fetch("/api/obtener")
+        fetch("/api/obtener1")
             .then((response) => response.json())
             .then((data) => renderPersonas(data.data)) // Llama a renderPersonas para mostrar los datos en la tabla.
             .catch((error) => console.error("Error fetching personas:", error)); // Muestra un error en la consola si falla la solicitud.
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Función para Agregar un nuvo registro a Persona.
     function createPersona(persona) {
-        fetch("/api/guardar", {
+        fetch("/api/guardar1", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(persona),
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         actualCedula = cedula; // Almacena la cédula de la persona que se está editando.
 
         // Solicita los datos de la persona usando la API.
-        fetch(`/api/obtener/${cedula}`)
+        fetch(`/api/obtener1/${cedula}`)
             .then(() => {
                 const row = Array.from(document.querySelectorAll('#personaTable tbody tr'))
                     .find(tr => tr.cells[0].textContent === cedula);
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Función para actualizar una persona.
     function updatePersona(cedula, updatedData) {
         isEditing = false;
-        fetch(`/api/actualizar/${cedula}`, {
+        fetch(`/api/actualizar1/${cedula}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(updatedData),
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     window.deletePersona = (cedula) => {
-        fetch(`/api/eliminar/${cedula}`, { method: "DELETE" })
+        fetch(`/api/eliminar1/${cedula}`, { method: "DELETE" })
             .then(fetchPersonas)
             .catch((error) => console.error("Error Al borrar el registro", error));
     };

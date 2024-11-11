@@ -82,7 +82,7 @@ app.put('/api/actualizar/:cedula', (req, res) => {
     nombre = COALESCE(?, nombre),
     celular = COALESCE(?, celular), 
     email = COALESCE(?, email), 
-    fecha = COALESCE(?, fecha) 
+    fecha = COALESCE(?, fecha)
     WHERE cedula = ? `;
 
     //const sql = 'UPDATE formularios SET nombre = ?, celular = ?, email = ? , fecha = ? WHERE cedula = ?';
